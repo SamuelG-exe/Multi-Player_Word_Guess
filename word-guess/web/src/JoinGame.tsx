@@ -1,9 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const JoinGame = () => {
   return (
     <div>
-      <h2>Join Game</h2>
+      <div>
+        <p></p>
+      </div>
+
+      <div className="card">
+        <Link to="/">
+          <button>Back to Home</button>
+        </Link>
+      </div>
     </div>
   );
 };

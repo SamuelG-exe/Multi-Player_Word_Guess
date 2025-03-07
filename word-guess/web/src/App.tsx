@@ -8,33 +8,38 @@ import "./App.css";
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              <h1>WordGuess</h1>
-              <div>
-                <p>
-                  Are you ready to Play
-                  <img src={qMark} className="logo" alt="Question Mark" />
-                </p>
-              </div>
+      <div>
+        <h1>WordGuess</h1>
 
-              <div className="card">
-                <Link to="/join-game">
-                  <button>Join Game</button>
-                </Link>
-                <Link to="/new-game">
-                  <button>New Game</button>
-                </Link>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div>
+                <div>
+                  <p>
+                    Are you ready to Play
+                    <img src={qMark} className="logo" alt="Question Mark" />
+                  </p>
+                </div>
+
+                <div className="card">
+                  <Link to="/join-game">
+                    <button className="NavButton">Join Game</button>
+                  </Link>
+                  <Link to="/new-game">
+                    <button className="NavButton">New Game</button>
+                  </Link>
+                </div>
               </div>
-            </div>
-          }
-        />
-        <Route path="/join-game" element={<JoinGame />} />
-        <Route path="/new-game" element={<NewGame />} />
-      </Routes>
+            }
+          />
+
+          <Route path="/join-game" element={<JoinGame />} />
+
+          <Route path="/new-game" element={<NewGame />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
