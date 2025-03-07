@@ -1,11 +1,41 @@
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import qMark from "./assets/questionMark.png";
+import JoinGame from "./JoinGame";
+import NewGame from "./NewGame";
+
 import "./App.css";
-import WordGenerator from "./WordGenerator";
 
 function App() {
   return (
-    <>
-      <WordGenerator />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <h1>WordGuess</h1>
+              <div>
+                <p>
+                  Are you ready to Play
+                  <img src={qMark} className="logo" alt="Question Mark" />
+                </p>
+              </div>
+
+              <div className="card">
+                <Link to="/join-game">
+                  <button>Join Game</button>
+                </Link>
+                <Link to="/new-game">
+                  <button>New Game</button>
+                </Link>
+              </div>
+            </div>
+          }
+        />
+        <Route path="/join-game" element={<JoinGame />} />
+        <Route path="/new-game" element={<NewGame />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
