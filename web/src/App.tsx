@@ -7,7 +7,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Multi-Player_Word_Guess">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/join-game" element={<JoinGame />} />
