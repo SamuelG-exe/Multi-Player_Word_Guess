@@ -1,5 +1,5 @@
 import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
-import { fetchWordFromAPI } from "./api";
+import { fetchWordFromAPI } from "../api";
 
 export const handler = async (
   event: APIGatewayProxyEvent
