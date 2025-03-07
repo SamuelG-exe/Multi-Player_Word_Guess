@@ -38,7 +38,7 @@ This is a multi-player word guessing game built using AWS Lambda for the backend
 
 * Lambda Exploration: This project allowed me to learn more about the power and limitations of AWS Lambda.
 
-##Future Improvements
+## Future Improvements
 
 * Complete Missing Features: Add leaderboard, hint system, and replay functionality.
 
