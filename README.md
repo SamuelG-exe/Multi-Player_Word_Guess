@@ -62,7 +62,7 @@ This is a multi-player word guessing game built using AWS Lambda for the backend
 
 5. Click home and New game to play again.
 
-##Technologies Used
+## Technologies Used
 
 * Frontend: HTML, CSS, JavaScript (TypeScript)
 
